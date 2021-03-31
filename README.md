@@ -3,3 +3,9 @@ This dataset contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10
 
 In addition to the sound excerpts, a CSV file containing metadata about each excerpt is also provided.
 Dataset link - https://www.kaggle.com/chrisfilo/urbansound8k
+
+# Methodology
+1.There are 3 basic methods to extract features from audio file : a) Using the mffcs data of the audio files b) Using a spectogram image of the audio and then converting the same to data points (As is done for images). This is easily done using mel_spectogram function of Librosa c) Combining both features to build a better model. (Requires a lot of time to read and extract data).
+2.I have chosen to use the second method.
+3.The labels have been converted to categorical data for classification.
+4.CNN has been used as the primary layer to classify data.
